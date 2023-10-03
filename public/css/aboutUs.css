@@ -1,0 +1,100 @@
+/* Nav bar */
+.navbar {
+    background-color: #003061;
+    height: 5.5vh;    
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    padding-right: 4vw;
+
+}
+
+.nav-links li {
+    margin: 10px 30px;  
+    font-size: 2.5vmin;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+
+
+}
+.nav-logo{
+    height: 5vh;
+    width: 10vw;
+    margin-left: 2%;
+    display: flex;
+    z-index: 50;
+}
+.back-arrow{
+    display: block;
+    height: 6vh;
+    width: auto;
+}
+.back-icon{
+    display: block;
+    margin-top: 1%;
+    height: auto;
+    width: auto;
+    margin-left: 1%;
+}
+
+.aboutUs-content{
+    height: 65%;
+    width: 80%;
+    margin-left: 10%;
+}
+.aboutUs-content h1{
+    margin-top: 3%;
+    color: #003061;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4vmin;
+    stroke-linejoin: miter;
+    font-weight: bold;
+}
+.aboutUs-content p{
+    color:#003061;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vmin;
+    stroke-linejoin: miter;
+}
+.bottom-container{
+    height: 10%;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    margin-top: 5%;
+}
+
+.bot-content{
+    display: flex;
+    height: auto;
+    width: 19%;
+    margin-top: -1.5%;
+}
+.bot-content a{
+    color:#003061;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4vmin;
+    stroke-linejoin: miter;
+    font-weight: bold;
+    padding-left: 1vw;
+}
+.bot-image{
+    display: flex;
+    height: 9vh;
+    width: 31%;
+}
+.bot-icon{
+    padding-left: 2vw;
+    height: 9vh;
+    margin-top: -5vh;
+}

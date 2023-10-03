@@ -1,0 +1,36 @@
+/* --------------------------- Main Element Set Up ---------------------------*/
+*{
+    margin:0;
+    padding:0;
+    
+  
+  }
+  
+  body{
+    max-height: 1080px;
+    background-color: #E9F0FE;
+    min-width: 375px;
+  
+  }
+
+/* footer */
+.footer-container{
+    right: 0;
+    left: 0;
+    bottom: 0vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.footer-logo {
+    height: 3vh;
+    width: 3vw;
+    float: left;
+    margin-top: 1vh;
+}
+
+.footer-container p{
+    color: black;
+    font-size: 3vmin;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,58 @@
+<main>
+    <nav class = "navbar">
+        <img class="nav-logo" src="imgs\logo.png">
+        <ul class ="nav-links">
+            <li><a href="/"><b>Home</b></a></li>
+            <li><a href="/aboutUs"><b>About us</b></a></li>
+    </nav>
+
+    <div class="login-header">
+        <img class="login-arrow" src="">
+        <a> Welcome back! </a>
+    </div>
+
+    {{!-- {{#each flash}}
+        <section class="alert">
+            <img src="https://img.icons8.com/emoji/48/000000/exclamation-mark-emoji.png" />
+            <p>{{this}}</p>
+        </section>
+    {{/each}} --}}
+
+    <div class = "login-content">
+        <div class = "login-content-left">
+            <img class = "login-image" src="imgs\login-image.png">
+            <div class ="login-content-text">
+                <a>Don't have an account?</a>
+                <c><b href="/signUp">Sign up</b> now!</c>
+            </div>
+        </div>
+        <div class = "login-content-right">
+            <div class="login-r-content">
+                <div class ="login-r-header">
+                    <a>Please enter your details.</a>
+                </div>
+                <div class = "login-detail">
+                    <form method="post" action="">
+                        <h3><lable>Username</label></h3>
+                        <input type="text" id="username" name="username" required>
+                        <h3><label>Password</label></h3>
+                        <input type="password" id="password" name="password" pattern=".{8,}" title="at least 8numbers or characters" >
+                        <div class="sign-up-change-password">
+                            <a href = "/signUp">Sign up</a>
+                            <a href = "/changePassword"> Change password</a>
+
+                        </div>
+                        
+
+                        <input type="submit" href="/guide" value="Log in" class="login-submit" id="submit">
+
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

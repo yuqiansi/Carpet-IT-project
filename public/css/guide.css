@@ -1,0 +1,115 @@
+/* Nav bar */
+.navbar {
+    background-color: #003061;
+    height: 5.5vh;    
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    padding-right: 4vw;
+
+}
+
+.nav-links li {
+    margin: 10px 30px;  
+    font-size: 2.5vmin;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+
+
+}
+.nav-logo{
+    height: 5vh;
+    width: 10vw;
+    margin-left: 2%;
+    display: flex;
+    z-index: 50;
+}
+.guide{
+    display:flex;
+    height: auto;
+    width: auto;
+    padding-bottom: 2%;
+}
+.guide-left{
+    height: 60%;
+    width: 50%;
+    margin-top: -3%;
+    display: block;
+}
+.guide-right{
+    height: 60%;
+    width: 50%;
+    display:block;
+}
+.login-image {
+    display: block;
+    height: 90%;
+    width: 90%;
+    margin-top: 12%;
+    z-index: 50;
+}
+/* guide page */
+.guide-image {
+    display: block;
+    z-index: 50;
+    margin-top: 12%;
+    width: 90%;
+    height: 90%;
+}
+.guide-header{
+    height: 10%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+    display: block;
+}
+.guide-header a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6vmin;
+    stroke-linejoin: miter;
+    font-weight: bold;
+    color: #2B468B;
+    margin-left: -33%;
+}
+.guide-LF{
+    display: block;
+    list-style-type: none;
+    padding-top: 4vw;
+}
+
+.guide-LF li {
+    background-color: #4E50FA;
+    color: white;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    width: 38vw;
+    border-radius: 20px;
+    height: 4.5vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    margin-top: 10vh;
+
+    
+}
+.guide-LF li:hover{
+    background-color: #91B3FA;
+}
+.guide-LF li a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5vmin;
+    stroke-linejoin: miter;
+    font-weight: bold;
+
+}
