@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({extended: false}))
 const noteSchema = new mongoose.Schema( {
     username: String,
     password: String,
-    cpassword: String
+    cpassword: String,
+    role:String
 })
 
 
@@ -45,7 +46,7 @@ app.post("/signUp",function(req,res){
                         
                         username: req.body.username,
                         password: req.body.password,
-                
+                        role:req.body.role
                     });
                 
                 newNote.save();
