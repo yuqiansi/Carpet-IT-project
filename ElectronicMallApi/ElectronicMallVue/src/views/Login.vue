@@ -19,17 +19,17 @@
                         user-drag: none;
                     "
                 />
-                <b style="font-size: 28px"> 登录在线商城 </b>
+                <b style="font-size: 28px"> Login as User or Admin </b>
             </div>
             <div style="margin-top: 30px">
                 <el-form label-width="70px">
-                    <el-form-item label="用户名">
+                    <el-form-item label="user name">
                         <el-input
                             v-model.trim="user.username"
                             aria-required="true"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="密码" style="margin-top: 25px">
+                    <el-form-item label="password" style="margin-top: 25px">
                         <el-input
                             v-model.trim="user.password"
                             show-password
@@ -46,7 +46,7 @@
                                 class="iconfont icon-r-yes"
                                 style="font-size: 22px"
                             ></i
-                            >登录</el-button
+                            >login</el-button
                         >
                         <el-button
                             @click="$router.push('/register')"
@@ -56,7 +56,7 @@
                                 class="iconfont icon-r-add"
                                 style="font-size: 22px"
                             ></i
-                            >注册</el-button
+                            >regist</el-button
                         >
                     </el-form-item>
                 </el-form>
