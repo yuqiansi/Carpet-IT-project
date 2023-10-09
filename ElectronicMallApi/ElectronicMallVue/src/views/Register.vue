@@ -7,24 +7,24 @@
     <div id="bk" class="wrapper">
         <div class="login-box">
             <div class="title">
-                <b>注 册</b>
+                <b>Register</b>
             </div>
             <div style="margin-top: 30px">
                 <el-form label-width="70px">
-                    <el-form-item label="用户名">
+                    <el-form-item label="Username">
                         <el-input
                             v-model.trim="user.username"
                             aria-required="true"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="密码" style="margin-top: 25px">
+                    <el-form-item label="Password" style="margin-top: 25px">
                         <el-input
                             v-model.trim="user.password"
                             show-password
                             aria-required="true"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="确认密码" style="margin-top: 25px">
+                    <el-form-item label="Comfirm Password" style="margin-top: 25px">
                         <el-input
                             v-model.trim="user.confirmPassword"
                             show-password
@@ -41,7 +41,7 @@
                                 class="iconfont icon-r-add"
                                 style="font-size: 22px"
                             ></i
-                            >注册</el-button
+                            >Regist</el-button
                         >
                         <el-button
                             @click="$router.push('/login')"
@@ -51,7 +51,7 @@
                                 class="iconfont icon-r-left"
                                 style="font-size: 22px"
                             ></i
-                            >返回</el-button
+                            >Back</el-button
                         >
                     </el-form-item>
                 </el-form>
