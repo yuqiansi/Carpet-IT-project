@@ -1,11 +1,11 @@
 <template>
   <el-card class="card">
     <div style="text-align: center; margin-bottom: 30px">
-      <b>修改个人信息</b>
+      <b>Change Personal Information</b>
     </div>
 
     <el-form label-width="60px">
-      <el-form-item label="头像">
+      <el-form-item label="Avatar">
         <el-upload
           class="avatar-uploader"
           :action="baseApi + '/avatar'"
@@ -22,34 +22,34 @@
         </el-upload>
       </el-form-item>
 
-      <el-form-item label="昵称">
+      <el-form-item label="Nickname">
         <el-input v-model="form.nickname" autocomplete="off"></el-input>
       </el-form-item>
-      <el-form-item label="电话">
+      <el-form-item label="Phone">
         <el-input v-model="form.phone" autocomplete="off"></el-input>
       </el-form-item>
-      <el-form-item label="邮箱">
+      <el-form-item label="Email">
         <el-input v-model="form.email" autocomplete="off"></el-input>
       </el-form-item>
-      <el-form-item label="地址">
+      <el-form-item label="Address">
         <el-input v-model="form.address" autocomplete="off"></el-input>
       </el-form-item>
       <el-button
         type="primary"
         style="font-size: 20px;margin-left: 190px; margin-top: 20px"
-        @click="save"><i class="iconfont icon-r-yes" style="font-size: 22px;"></i>确定</el-button
+        @click="save"><i class="iconfont icon-r-yes" style="font-size: 22px;"></i>Change</el-button
       >
     </el-form>
     <el-popover placement="right" width="200" trigger="click">
       <el-form>
-        <el-form-item label="新密码">
+        <el-form-item label="New Password">
           <el-input
             type="password"
             v-model="resetPsw.newPassword"
             autocomplete="off"
           ></el-input>
         </el-form-item>
-        <el-form-item label="确认密码">
+        <el-form-item label="Comfirm Password">
           <el-input
             type="password"
             v-model="resetPsw.confirmPassword"
@@ -57,7 +57,7 @@
           ></el-input>
         </el-form-item>
         <el-button style="font-size: 15px;font-size: 20px;" type="primary" @click="toResetPassword"
-          ><i class="iconfont icon-r-yes" style="font-size: 22px;"></i>确定</el-button
+          ><i class="iconfont icon-r-yes" style="font-size: 22px;"></i>Comfirm</el-button
         >
       </el-form>
       <el-button
@@ -65,7 +65,7 @@
         type="warning"
         style="margin-left: 190px; margin-top: 20px; font-size: 20px;"
         @click="resetPsw = { newPassword: '', confirmPassword: '' }"
-        ><i class="iconfont icon-r-lock" style="font-size: 22px;"></i>重置密码</el-button
+        ><i class="iconfont icon-r-lock" style="font-size: 22px;"></i>Change Password</el-button
       >
     </el-popover>
   </el-card>
