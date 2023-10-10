@@ -1,0 +1,176 @@
+<template>
+  <div>
+    <div>
+      <el-select v-model="searchMode" placeholder="Please select the order type: " style="width: 150px;margin-right: 10px">
+        <el-option value="Paid" label="Paid"></el-option>
+        <el-option value="Shipping" label="Shipped"></el-option>
+        <el-option value="Delivered" label="Delivered"></el-option>
+      </el-select>
+      <el-input v-model="searchText" @keyup.enter.native="load" style="width: 200px"> <i slot="prefix" class="el-input__icon el-icon-a-042"></i></el-input>
+      <el-button @click="reset" type="warning" style="margin: 10px">
+        <i class="el-icon-a-031"></i>
+        Reset
+      </el-button>
+      <el-button @click="load" type="primary" style="margin: 10px">
+        <i class="el-icon-a-042"></i>
+        Search
+      </el-button>
+    </div>
+    <el-table :data="tableData" border stripe style="width: 100%">
+      <el-table-column prop="id" label="ID" width="50" sortable> </el-table-column>
+      <el-table-column prop="orderNo" label="Order Number" width="200"></el-table-column>
+      <el-table-column prop="totalPrice" label="Total Price" width="100"></el-table-column>
+      <el-table-column prop="userId" label="User ID" width="100"></el-table-column>
+      <el-table-column prop="linkUser" label="Contact Person" width="150"></el-table-column>
+      <el-table-column prop="linkPhone" label="Contact Phone"></el-table-column>
+      <el-table-column prop="linkAddress" label="Delivery Address" width="300"></el-table-column>
+      <el-table-column prop="state" label="Status" width="100">
+        <template slot-scope="scope">
+          <el-tag type="success" v-if="scope.row.state==='Paid'">{{scope.row.state}}</el-tag>
+          <el-tag type="primary" v-if="scope.row.state==='Shipping'">{{scope.row.state}}</el-tag>
+          <el-tag type="info" v-if="scope.row.state==='Delivered'">{{scope.row.state}}</el-tag>
+        </template>
+      </el-table-column>
+      <el-table-column prop="createTime" label="Order Time"></el-table-column>
+      <el-table-column
+          fixed="right"
+          label="Operation"
+          width="250">
+        <template slot-scope="scope">
+          <el-button type="primary" style="font-size: 18px;"  @click="showDetail(scope.row)">
+            <i class="el-icon-a-042" style="font-size: 22px;"></i>
+            Detail
+          </el-button>
+          <el-popconfirm
+              @confirm="delivery(scope.row)"
+              title="Are you sure to ship?"
+              v-if="scope.row.state==='Paid'"
+          >
+            <el-button type="primary" style="font-size: 18px;margin-left: 10px;" slot="reference">
+              <i class="el-icon-a-07" style="font-size: 22px;"></i>
+              Ship
+            </el-button>
+          </el-popconfirm>
+        </template>
+      </el-table-column>
+    </el-table>
+<!--    分页-->
+    <div style="margin-top: 10px">
+      <el-pagination
+        @size-change="handleSizeChange"
+        @current-change="handleCurrentChange"
+        :current-page="pageNum"
+        :page-size="pageSize"
+        :page-sizes="[3, 5, 8, 10]"
+        layout="total, sizes, prev, pager, next, jumper"
+        :total="total"
+      >
+      </el-pagination>
+    </div>
+<!--    详情弹窗-->
+    <el-dialog :visible.sync="dialogFormVisible">
+      <el-table :data="detail" background-color="black" >
+        <el-table-column  label="Picture" width="150" >
+          <template   slot-scope="scope">
+            <img :src="baseApi + scope.row.img"  min-width="100" height="100" />
+          </template>
+        </el-table-column>
+
+        <el-table-column prop="goodId" label="Product ID"  ></el-table-column>
+        <el-table-column prop="goodName" label="Product Name"  ></el-table-column>
+        <el-table-column prop="standard" label="Specification"  ></el-table-column>
+        <el-table-column prop="price" label="Unit Price"  ></el-table-column>
+        <el-table-column prop="discount" label="Discount"></el-table-column>
+        <el-table-column label="Actual Price" >
+          <template slot-scope="scope">
+            {{scope.row.price * scope.row.discount}}
+          </template>
+        </el-table-column>
+        <el-table-column prop="count" label="Quantity" ></el-table-column>
+        <el-table-column label="Total Price" >
+          <template slot-scope="scope">
+            {{scope.row.price * scope.row.discount * scope.row.count }}
+          </template>
+        </el-table-column>
+      </el-table>
+    </el-dialog>
+  </div>
+</template>
+
+<script>
+import API from '../../utils/request'
+const url = "/api/order/"
+
+export default {
+  name: "Order",
+  data() {
+    return {
+      options: [],
+      searchMode: '',
+      searchText: '',
+      user: {},
+      tableData: [],
+      pageNum: 1,
+      pageSize: 8,
+      entity: {},
+      total: 0,
+      dialogFormVisible: false,
+      detail:[],
+      baseApi: this.$store.state.baseApi,
+    };
+  },
+  created() {
+    this.load()
+  },
+  methods: {
+    handleSizeChange(pageSize) {
+      this.pageSize = pageSize
+      this.load()
+    },
+    handleCurrentChange(pageNum) {
+      this.pageNum = pageNum
+      this.load()
+    },
+    reset(){
+      this.searchMode = '';
+      this.searchText = '';
+      this.load()
+    },
+    load() {
+       API.get(url + "/page", {
+          params: {
+            pageNum: this.pageNum,
+            pageSize: this.pageSize,
+            orderNo: this.searchText,
+            state: this.searchMode
+          }
+       }).then(res => {
+          this.tableData = res.data.records || []
+          this.total = res.data.total
+       })
+    },
+    showDetail(row){
+        this.request.get("/api/order/orderNo/"+row.orderNo).then(res=>{
+          if(res.code==='200'){
+            this.detail=[];
+            this.detail.push(res.data);
+            this.dialogFormVisible = true;
+          }
+        })
+    },
+    //发货
+    delivery(order){
+        this.request.get("/api/order/delivery/"+order.orderNo).then(res=>{
+          if(res.code==='200'){
+            this.$message.success("Shipped Successfully");
+            order.state = 'Shipping'
+          }
+        })
+    },
+
+  },
+};
+</script>
+
+<style scoped>
+</style>

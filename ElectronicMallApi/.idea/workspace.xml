@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="301386b1-6774-44c4-8145-9c4c816ea1da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ElectronicMallApi/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/ElectronicMallApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/annotation/Authority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/common/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/config/CorsConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/config/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/config/InterceptorConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/constants/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/constants/RedisConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/AvatarController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/CarouselController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/GoodController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/IconController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/IncomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/RoleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/AuthorityType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Avatar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Carousel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Good.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/GoodStandard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Icon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/IconCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/LoginForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/MyFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/OrderGoods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/Standard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/dto/GoodDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/entity/dto/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/exception/ServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/interceptor/AuthorityInterceptor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/interceptor/AuthorityInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/interceptor/JwtInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/AvatarMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/CarouselMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/CartMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/FileMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/GoodMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/IconCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/IconMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/IncomeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/OrderGoodsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/StandardMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/AvatarService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/CarouselService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/CartService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/GoodService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/IconService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/IncomeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/OrderGoodsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/StandardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/utils/BaseApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/utils/PathUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/utils/TokenUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ElectronicMallApi/target/classes/com/ly/em/utils/UserHolder.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2WYOqWhq2ZcpdOi6Ue72IYBFWlJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "yfh",
+    "last_opened_file_path": "D:/program/Carpet-IT-project/ElectronicMallApi"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ElectronicMallApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.ly.em.ElectronicMallApplication" />
+      <module name="ElectronicMallApi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ly.em.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ElectronicMallApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SwiftWorkspaceSettings">
+    <option name="detectedToolchain" value="true" />
+    <option name="toolchainPathValue" value="C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="301386b1-6774-44c4-8145-9c4c816ea1da" name="Changes" comment="" />
+      <created>1696906237170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696906237170</updated>
+    </task>
+    <servers />
+  </component>
+</project>
