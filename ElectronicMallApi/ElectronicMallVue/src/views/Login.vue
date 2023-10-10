@@ -82,7 +82,7 @@ export default {
     methods: {
         onSubmit() {
             if (this.user.username === "" || this.user.password === "") {
-                this.$message.error("账号或密码不能为空");
+                this.$message.error("Username or passport");
                 return false;
             }
             let form = {};
